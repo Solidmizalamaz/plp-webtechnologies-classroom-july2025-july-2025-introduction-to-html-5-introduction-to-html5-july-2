@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type="submit"] {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: #fff;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #3e8e41;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Enhanced Form</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Form Section</h2>
+      <form id="enhanced-form">
+        <fieldset>
+          <legend>Personal Details</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Joseph Ifeanyichukwu" required autocomplete="name">
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="joseph_ifeanyichukwu@example.com" required autocomplete="email">
+
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required autocomplete="tel">
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Address</legend>
+          <label for="street">Street:</label>
+          <input type="text" id="street" name="street" placeholder="123 Main St" required autocomplete="address-line1">
+
+          <label for="city">City:</label>
+          <input type="text" id="city" name="city" placeholder="Anytown" required autocomplete="address-level2">
+
+          <label for="state">State:</label>
+          <select id="state" name="state" required>
+            <option value="">Select a state</option>
+            <option value="RV">Rivers</option>
+            <option value="LA">Lagos</option>
+            <option value="AB" >Abuja</option>
+            <!-- Add more states as needed -->
+          </select>
+
+          <label for="zip">Zip:</label>
+          <input type="text" id="zip" name="zip" placeholder="12345" pattern="[0-9]{5}" required autocomplete="postal-code">
+        </fieldset>
+
+        <fieldset>
+          <legend>Additional Information</legend>
+          <label for="comments">Comments:</label>
+          <textarea id="comments" name="comments" placeholder="Enter any other comments"></textarea>
+
+          <label for="subscribe">Subscribe to newsletter:</label>
+          <input type="checkbox" id="subscribe" name="subscribe">
+        </fieldset>
+
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+
+    <section>
+      <h2>Example Table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Joseph Ifeanyichukwu</td>
+            <td>joseph_ifeanyichukwu@example.com</td>
+            <td>123-456-7890</td>
+          </tr>
+          <tr>
+            <td>Sarah Andrew</td>
+            <td>sarah_andrew@example.com</td>
+            <td>987-654-3210</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Media Section</h2>
+      <img src="https://via.placeholder.com/320" alt="Placeholder Image">
+      <video width="320" height="240" controls>
+        <source src="https://dataville.googleapis.com/gtv-videos-youtube/src/videos/smp.mp4" type="video/mp4">
+      </video>
+    </section>
+  </main>
+</body>
+</html>
